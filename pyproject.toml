@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "safe-sqlite-deploy"
+version = "1.0.0"
+description = "SQLite-aware releases with isolated candidates and tested runtime rollback"
+requires-python = ">=3.11"
+license = {text = "All rights reserved; no license granted"}
+dependencies = []
+
+[project.scripts]
+safe-sqlite-deploy = "safe_sqlite_deploy.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["safe_sqlite_deploy*"]

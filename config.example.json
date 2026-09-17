@@ -1,0 +1,14 @@
+{
+  "repository": "/srv/my-app/source",
+  "stateDir": "/srv/my-app/deploy-state",
+  "database": "/srv/my-app/data/application.sqlite",
+  "productionEnvFile": "/srv/my-app/private/environment.json",
+  "commandTimeoutSeconds": 120,
+  "healthTimeoutSeconds": 15,
+  "service": {
+    "start": ["/srv/my-app/bin/service-adapter", "start", "{release}"],
+    "stop": ["/srv/my-app/bin/service-adapter", "stop"],
+    "healthUrl": "http://127.0.0.1:8080/health",
+    "port": 8080
+  }
+}

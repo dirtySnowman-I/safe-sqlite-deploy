@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "build": [["python3", "build.py"]],
+  "test": ["python3", "test_app.py"],
+  "start": ["python3", "server.py"],
+  "compatibility": ["python3", "compatibility.py"],
+  "migrations": "migrations",
+  "healthPath": "/health"
+}
