@@ -9,7 +9,7 @@ A single-host deployment CLI that tests a candidate release against a consistent
 Requires **Linux, Python 3.11+, and Git**. The CLI and demo use the Python standard library; no accounts, external services, containers, or runtime packages are required.
 
 ```bash
-git clone https://github.com/ella4moon/safe-sqlite-deploy.git
+git clone https://github.com/dirtySnowman-I/safe-sqlite-deploy.git
 cd safe-sqlite-deploy
 python3 -m unittest discover -s tests -v
 python3 -m examples.demo
